@@ -1,0 +1,342 @@
+/*Fonts*/
+/*
+h1, h2: font-family: 'Cabin', sans-serif;
+p: font-family: 'Poppins', sans-serif;
+*/
+/*Palette #3*/
+/*
+#201335
+#4F4789
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000; 
+}
+.body-2{
+    padding-top:20%;
+    margin: 0;
+    
+}
+
+h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: #000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    justify-content: center;
+    
+}
+.logo img{
+    /*margin-left: -1.25em;*/
+    margin-top: 0.255em;
+    width: 2.188em;
+    height: 2.188em;
+}
+.logo a{
+    margin-left: 2.2em;
+    font-family: 'Cabin', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.3rem;
+    position: relative;
+}
+li{
+    list-style: none;
+    margin-top: 0.375em;
+
+}
+nav{
+    display: flex; 
+}
+nav .fa{
+    margin-top: 0.375em;
+    display: none; 
+    font-size: 2.3em;
+    
+}
+nav a{
+    margin: 0.01em;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+}
+nav a:hover{
+    transform: translateX(10px);
+    background: linear-gradient(0deg, rgba(195,34,148,1) 0%, rgba(253,90,45,1) 69%);
+}
+
+
+.menu.active{
+    width: 100%;
+    height: 320px;
+    display: grid!important;
+    background: linear-gradient(0deg, rgba(195,34,148,1) 0%, rgba(253,90,45,1) 69%);
+    top: 100%;
+}
+.menu.active a{
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p, a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate__animated.animate__slideInLeft{
+    --animate-duration: 3s;
+}
+
+
+
+.about-me{
+    width: 90%;
+    height: 55vh;
+    margin: auto;
+    margin-top: 2.188em;
+}
+.about-me-2{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+     margin-top: 1.5em;
+}
+.about-title{
+    widows: 90%;
+    height:7vh;
+    margin: auto;
+}
+.about-text{
+    width: 90%;
+    height: 49vh;
+    margin: auto;
+    margin-top: 2vh;
+    font-size:22px;
+    text-align: center;
+    text-align: justify;
+}
+
+.skills{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 6.88em;
+}
+.skills-title{
+    margin-bottom: 23px;
+}
+
+.skills-cont{
+    width: 90%;
+    height: 51vh;
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+    text-align: justify;
+}
+.skills-cont img{
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.projects{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 10.188em;
+    
+}
+.projects-table{
+    height: 60vh;
+    width:90%;
+    margin:auto;
+}
+.table{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    text-align: center;
+    font-size: 20px;
+}
+#table-name{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    margin-top: 4.375em;
+    text-align: center;
+}
+.footer-center{
+    width: 80%;
+    margin:auto;
+    
+}
+.footer p{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 2%
+}
+.redes{
+    width: 54%;
+    text-align: center;
+    margin: auto;
+}
+.fab{
+    font-size: 30px;
+    color:rgba(195,34,148,1)
+}
+.fab.fa-linkedin{
+    float: left;
+    margin-left: 35px;
+}
+.fab.fa-instagram{
+    float:none;
+}
+.fab.fa-github{
+    float: right;
+    margin-right: 35px;
+
+}
+
+@media (max-width: 900px){
+    nav .fa{
+        display: block;
+        cursor: pointer;
+    }
+    nav .menu{
+        width: 11.25em;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5.938em;
+        right: 3.125em;
+        background: rgb(255, 255, 255, 0.1);
+        z-index: 10;
+    }
+    nav .menu.active{
+        display: flex;
+    }
+    .logo-desktop{
+        display: none;
+    }
+    .logo-escritorio-1, .logo-escritorio-2{
+        display: none;
+    }
+}
+
+@media (max-width: 570px){
+    nav .menu{
+        width: 27.5em;
+        flex-direction: row;
+        right: 0;
+    }
+    .logo-desktop{
+        display: none;
+    }
+    .logo-escritorio-1, .logo-escritorio-2{
+        display: none;
+    }
+}
+
+@media (max-width: 570px){
+    nav .menu{
+        width: 21.875em;
+        flex-direction: row;
+        right: 0;
+    }
+    nav .menu a{
+        font-size: 0.9rem;
+    }
+    .logo-desktop{
+        display: none;
+    }
+    .logo-escritorio-1, .logo-escritorio-2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .about-me-2{
+        margin-top: 6em;
+    }
+    .skills{
+        margin-top: 14em;
+    }
+    .projects{
+        margin-top: 18em;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    mav a{
+        font-size: 1.4rem;
+    }
+    .logo{
+        margin-left: 8.5%;
+    }
+    .menu{
+        font-size: 60px;
+        margin-inline: -9%;
+    }
+    .logo-mobile{
+        display: none;
+    }
+    .skills{
+        margin-top: 0.938em;
+    }
+    .skills-cont img{
+        width:200px;
+        height:200px;
+        margin-bottom: 3em;
+        margin-top: 2em;
+    }
+    .logos-escritorio{
+        text-align: center;
+        margin-left: 50px;
+    }
+    img.logo-escritorio-1{
+        width: 320px;
+    }
+    img.logo-escritorio-2{
+        width: 245px;
+    }
+}
+
+
+
+

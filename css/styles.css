@@ -1,0 +1,191 @@
+.navbar-brand {
+    padding-left: 12px;
+}
+
+
+.list-group-item.active {
+    background-color: black !important;
+    border-color: black !important;
+
+}
+
+.fixed-top {
+    background-color: black !important;
+
+}
+
+.btn {
+    background-color: black;
+    color: white !important;
+    
+    position: absolute;
+
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*Mediaqueri para pantallas menores a 414px de ancho */
+
+@media only screen and (max-width: 414px){
+    body{
+        max-width: 414px;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        font-size: 23px;
+        line-height: 1.7;
+        text-align: justify;
+        width: 80%;
+        padding-bottom: 25px;
+        margin: auto;
+    }
+    .navbar
+    .navbar-brand{
+        font-size: 24px;
+    }
+    #carousel{
+        padding-top: 62px;
+        width: 57vh;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    #Restaurant{
+        width: 54vh;
+        margin-top: -30px;
+        margin: auto;
+    }
+    .img-fluid.up{
+        margin-left: 12px;
+    }
+    .img-fluid{
+        width: 95%;
+    }
+    .text-capitalize{
+        text-align: center;
+    }
+    .text-restaurant{
+        margin-bottom: 22px;
+    }
+    .first-photo{
+        margin-bottom: 25px;
+    }
+    .second-photo{
+        margin-bottom: 25px;
+    }
+    .list-group{
+        width: 80%;
+        position: relative;
+        margin: auto;
+        font-size: 22px;
+    }
+    .img-list{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        margin-left: 40px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        top: 60px;
+    }
+    form{
+        width: 80%;
+        position: relative;
+        margin: auto;
+        font-size: 22px;
+    }
+    .button-submit{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        left: 63px;
+    }
+    iframe{
+        width: 100%;
+        position: relative;
+        margin: auto;
+        
+    }
+    .our-text{
+        margin-top: 30px;
+    }
+    .text-iframe{
+        text-align: center;
+    }
+    .text-footer{
+        text-align: center;
+    }
+}
+
+/*Pantallas mayores a 400px hasta 767px*/
+@media only screen and (min-width: 400px){
+
+}
+
+/*Media queri para desktop (mayores a 900px)*/
+@media (min-width: 900px){
+    #Menu{
+        margin-top: 20px;
+    }
+    #Reservation{
+        margin-top: 30px;
+    }
+    #OurLocation{
+        margin-top: 50px;
+    }
+    #footer{
+        margin-top: 30px;
+    }
+
+    .col-12.menu-display{
+        flex: 0 0 33%;
+        max-width: 100%;
+    }
+    .col-md-6.formulario{
+        flex: 0 0 70%;
+        max-width: 100%;
+        text-align: center;
+        left: 176px;
+    }
+    .button-submit{
+        right: 209px;
+        width: 50%;
+    }
+    .text-iframe{
+        text-align: center;
+    }
+}
+
+
+/*MQ para pantallas menores a 375px*/
+@media only screen and (max-width: 375px){
+    .container .navbar-brand{
+        font-size: 22px;
+    }
+    #carousel{
+        padding-top: 61px;
+        width: 59vh;
+    }
+    .menu-display{
+        margin-top:20px;
+    }
+    .img-list{
+        margin-left: 32px;
+    }
+    #OurLocation{
+        margin-top: 20px;
+    }
+    #footer{
+        margin-top: 10px;
+    }
+}
